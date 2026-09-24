@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  position: relative;
+}
+
+.container {
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.box {
+  display: inline-block;
+  width: 100px;
+  height: 150px;
+  background-color: #eeeff2;
+  border-left: 10px dotted #D0D0FF;
+  margin-right: 10px;
+  padding: 10px;
+  font-family: Tahoma, sans-serif;
+  font-size: 40px;
+  vertical-align: top;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.box:hover {
+  cursor: pointer;
+  background-color: yellow;
+  color: goldenrod;
+}
+
+.box:last-child {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  margin-right: 0;
+}
