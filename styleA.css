@@ -1,13 +1,21 @@
+/* Reset standard margins and paddings; ensure border-box sizing across all elements */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* Ensure root containers occupy the entire vertical height of the browser window */
 html, body {
   height: 100%;
 }
 
+/* 
+  Flexbox layout for Style A:
+  - flex-direction: column stacks elements vertically
+  - justify-content: space-between spaces elements evenly across vertical height
+  - align-items: center horizontally centers all boxes
+*/
 .container {
   display: flex;
   flex-direction: column;
@@ -17,6 +25,14 @@ html, body {
   padding: 10px 0;
 }
 
+/* 
+  Base properties for all boxes in Style A:
+  - 100x100 pixels fixed size
+  - flex-shrink: 0 ensures boxes never shrink or change size on window resize
+  - 1px top line with color #687291
+  - Centered text horizontally using text-align
+  - Tahoma font, 40px
+*/
 .box {
   width: 100px;
   height: 100px;
@@ -27,14 +43,22 @@ html, body {
   text-align: center;
 }
 
+/* Alternating background color for odd boxes */
 .box:nth-child(odd) {
   background-color: #dfe1e7;
 }
 
+/* Alternating background color for even boxes */
 .box:nth-child(even) {
   background-color: #eeeff2;
 }
 
+/* 
+  Final box element (F) specifications:
+  - Background color: #687291
+  - 4px solid black border
+  - Flexbox centering used to center text both vertically and horizontally
+*/
 .box:last-child {
   background-color: #687291;
   border: 4px solid #000000;
