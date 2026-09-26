@@ -13,3 +13,6 @@ This project demonstrates how a single HTML document can adopt two drastically d
 1. **Vertical Distribution in Style A:** Ensuring the boxes were vertically distributed evenly across the full viewport height without shrinking or overflowing required setting `height: 100%` on `html`, `body`, and the container, alongside `justify-content: space-between` and `flex-shrink: 0`.
 2. **Preventing Line Wrapping in Style B:** To prevent boxes A through E from wrapping onto new lines when the window narrows, `white-space: nowrap` was paired with `display: inline-block`.
 3. **Decoupling the 6th Box in Style B:** Isolating the last element while keeping the first five in flow was solved using `position: fixed` targeted via `:last-child`.
+
+## Browser Compatibility
+Tested and verified across modern web browsers (Chrome, Safari, Firefox).
