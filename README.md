@@ -16,3 +16,6 @@ This project demonstrates how a single HTML document can adopt two drastically d
 
 ## Browser Compatibility
 Tested and verified across modern web browsers (Chrome, Safari, Firefox).
+
+## Verification
+Validated layout scaling and responsiveness for both Style A and Style B.
